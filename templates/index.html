@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Deployment</title>
+    <style>
+        body{
+            text-align: center;}
+        h1 { color:blue}
+        label { color:firebrick}
+
+        input[type=submit] {
+            padding:5px 15px; 
+            background:#ccc; 
+            border:0 none;
+            cursor:pointer;
+            -webkit-border-radius: 5px;
+            border-radius: 5px; 
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    
+<div > 
+   <h1 > Predicting market Volatilty based on sentiments  </h1> 
+   
+   <form  action="/" method="POST">
+        <h2>Sentiment Model</h2>
+        <h3>
+            Enter Any sentiment
+            ,Day,month,year,open,low,high,volume
+        </h3>
+        <input type="number" name="day" placeholder="write Day">
+        <input type="number" name="month"  placeholder="write Month" >
+        <input type="number" name="year"  placeholder="write year" >
+        <input type="number" name="open"  placeholder="open value" >
+        <input type="number" name="high"  placeholder="high value" >
+        <input type="number" name="low"  placeholder="low value" >
+        <input type="number" name="volume"  placeholder="volume" >
+        <input type="text" name="sentiment" placeholder=" sentiment ">
+        <input type="submit">
+   </form>
+   
+   <h3>The predicted market moment is : {{Sscore}}</h3> 
+</div>
+
+</body>
+</html>
+
+
